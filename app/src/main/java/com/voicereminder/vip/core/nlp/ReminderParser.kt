@@ -309,11 +309,11 @@ object ReminderParser {
         var date: LocalDate
         var timeAssumed = false
 
-        val relative = relativeBase
-        if (relative != null) {
-            hour = relative.hour
-            minute = relative.minute
-            date = relative.toLocalDate()
+        val relativeTime = relativeBase
+        if (relativeTime != null) {
+            hour = relativeTime.hour
+            minute = relativeTime.minute
+            date = relativeTime.toLocalDate()
             repeat = RepeatType.ONCE
         } else {
             if (clock != null) {
