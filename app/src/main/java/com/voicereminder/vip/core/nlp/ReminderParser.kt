@@ -505,7 +505,7 @@ object ReminderParser {
     private fun parseWeeklyRange(search: String): Pair<Int, IntRange>? {
         val names = "احد|اثنين|ثلاثاء|اربعاء|خميس|جمعه|سبت"
         val regex = Regex(
-            "(?:من\\s+)?(?:ال)?($names)\\s+(?:الى|إلى|حتى|ـ|-)\\s+(?:ال)?($names)"
+            "(?:من\\s+)?(?:ال)?($names)\\s+(?:الى|الي|إلى|إلي|حتى|ـ|-)\\s+(?:ال)?($names)"
         )
         val match = regex.find(search) ?: return null
         val start = arabicWeekdays.firstOrNull { match.groupValues[1].endsWith(it.first) }?.second
