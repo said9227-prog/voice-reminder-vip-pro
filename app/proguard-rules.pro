@@ -1,0 +1,3 @@
+-keep class com.voicereminder.vip.data.db.** { *; }
+-keep class androidx.room.** { *; }
+-keepclassmembers class * extends androidx.room.RoomDatabase { <init>(); }

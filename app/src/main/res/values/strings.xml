@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voice Reminder VIP PRO</string>
+    <string name="channel_alarm_name">المنبهات والتذكيرات</string>
+    <string name="channel_alarm_desc">تنبيهات صوتية دقيقة</string>
+    <string name="channel_service_name">تشغيل الرسائل الصوتية</string>
+    <string name="channel_service_desc">خدمة تشغيل المنبه الصوتي</string>
+</resources>
